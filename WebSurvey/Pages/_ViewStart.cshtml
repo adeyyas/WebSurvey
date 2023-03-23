@@ -1,3 +1,51 @@
-﻿@{
-    Layout = "_Layout";
-}
+﻿
+@using WebSurvey
+@namespace WebSurvey.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Anketi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOUktwPL4dZfM++HPOz7ntvHHLQ5i7UksdQRVg7BvJjwGwS" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h1>Web Anketi</h1>
+		<hr />
+		<h2>Soru</h2>
+		<p>İlgili sorununuzu buraya yazınız.</p>
+		<hr />
+		<h2>Cevaplar</h2>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="cevap" id="cevap1" value="1">
+			<label class="form-check-label" for="cevap1">
+				Cevap 1
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="cevap" id="cevap2" value="2">
+			<label class="form-check-label" for="cevap2">
+				Cevap 2
+			</label>
+		</div>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="cevap" id="cevap3" value="3">
+			<label class="form-check-label" for="cevap3">
+				Cevap 3
+			</label>
+		</div>
+		<hr />
+		<button type="submit" class="btn btn-primary">Oyla</button>
+	</div>
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- Bootstrap CDN -->
+	<script src="https://cdn.jsdelivr.net/npm/core@2.9.3/dist/umd/popper.min.js"
+			integrity="sha384-8BPXTzROq3rVl2bNV9d5ddx1SvSv5o5fBzjFwE/tm4m4Aqzw3ZM2E1Gi/0M/nkFv"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOUktwPL4dZfM++HPOz7ntvHHLQ5i7UksdQRVg7BvJjwGw"></script>
+</body>
